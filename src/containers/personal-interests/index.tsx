@@ -226,7 +226,7 @@ const items = [
     description: (
       <span className="text-sm">
         From deep focus to feel-good vibes, I create playlists that fuel my day
-        — &ldquo;Working Energy&ldquo; is one of my favorites.
+        — &ldquo;Chill with me&ldquo; is one of my favorites.
       </span>
     ),
     header: <SkeletonThree />,
