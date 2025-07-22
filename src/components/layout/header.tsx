@@ -125,14 +125,14 @@ export const Header = () => {
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <iframe
+            {/* <iframe
               className="hidden sm:block"
               src="https://github.com/sponsors/github-nqvnlc/button"
               title="Sponsor locnv14"
               height="32"
               width="114"
               style={{ border: "0", borderRadius: "6px" }}
-            ></iframe>
+            ></iframe> */}
             <a
               href={"https://github.com/github-nqvnlc"}
               target="_blank"
@@ -197,13 +197,13 @@ export const Header = () => {
                     </Link>
                   ))}
                   <Separator />
-                  <iframe
+                  {/* <iframe
                     src="https://github.com/sponsors/github-nqvnlc/button"
                     title="Sponsor locnv"
                     height="32"
                     width="114"
                     style={{ border: "0", borderRadius: "6px" }}
-                  ></iframe>
+                  ></iframe> */}
                 </div>
               </DrawerContent>
             </Drawer>

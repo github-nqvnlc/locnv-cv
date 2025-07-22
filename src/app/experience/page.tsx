@@ -1,16 +1,16 @@
-import { FullScreen } from "@/components/full-screen"
-import { ExperienceTimeline } from "./containers/experience-timeline"
+import { FullScreen } from "@/components/full-screen";
+import { ExperienceTimeline } from "./containers/experience-timeline";
 
 export const metadata = {
-  title: "Experience | Locnv Dev",
+  title: "Experience | Locnv",
   description:
-    "Explore the professional journey of Locnv Dev - frontend developer with experience in modern JavaScript frameworks.",
+    "Explore the professional journey of Locnv - frontend developer with experience in modern JavaScript frameworks.",
   openGraph: {
-    title: "Experience | Locnv Dev",
+    title: "Experience | Locnv",
     description:
       "Frontend Developer with hands-on experience in React, Next.js, and modern UI/UX design.",
     url: "https://locnv.vercel.app/experience",
-    siteName: "Locnv Dev",
+    siteName: "Locnv",
     images: [
       // {
       //   url: "https://locnv.vercel.app/images/seo/experience-og-image.png",
@@ -30,7 +30,7 @@ export const metadata = {
   alternates: {
     canonical: "https://locnv.vercel.app/experience",
   },
-}
+};
 
 export default function Page() {
   return (

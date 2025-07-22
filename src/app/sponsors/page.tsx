@@ -3,8 +3,8 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sponsors | Locnv Dev",
-  description: "Sponsors of Locnv Dev",
+  title: "Sponsors | Locnv",
+  description: "Sponsors of Locnv",
 };
 
 export default function Page() {
