@@ -89,14 +89,14 @@ export const MyUniverse = () => {
               animation={currentAnimation}
               by="character"
               startOnView={false}
-              className="break-words"
+              className="break-words cursor-pointer"
             >
               {currentText}
             </TextAnimate>
           </motion.div>
         </div>
         <div className="text-lg text-zinc-600 dark:text-zinc-400 my-6 md:my-10 font-bold">
-          React Enthusiast ⚛️ | Next.js Explorer 🚀
+          React Enthusiast ⚛️ | Next.js Explorer 🚀 | Svelte Developer 💻
           <br />{" "}
           <span className="font-normal italic">
             Leading scalable UI development & shaping modern web experiences
@@ -115,8 +115,8 @@ export function CompareDemo() {
   return (
     <div className="w-full border rounded-3xl dark:bg-neutral-900 bg-neutral-100 border-neutral-200 dark:border-neutral-800">
       <Compare
-        firstImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%283%29-9ohWXR6mPsqfP9GC3OXB6l23pKXqpS.png"
-        secondImage="https://voocgavdbpy2gucg.public.blob.vercel-storage.com/portfolio/image%20%284%29-Z38KH4uoJOoyhY6YDXVDNxRu8uWZUS.png"
+        firstImage="https://lxbsypbe5na5ujep.public.blob.vercel-storage.com/me/3.png"
+        secondImage="https://lxbsypbe5na5ujep.public.blob.vercel-storage.com/me/3.png"
         firstImageClassName="object-cover object-left-top"
         secondImageClassname="object-cover object-left-top"
         className="h-[200px] sm:h-[250px] md:h-[400px] lg:h-[500px] w-full"
@@ -128,8 +128,8 @@ export function CompareDemo() {
 
 export const Title = memo(() => {
   return (
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700">
-      I&apos;m <Cover>Kinh Bach</Cover>
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight sm:my-6 dark:text-zinc-300 text-zinc-700 cursor-pointer">
+      I&apos;m <Cover>Van Loc</Cover>
     </h1>
   )
 })

@@ -1,25 +1,59 @@
 export const TECH_STACK = [
-  "typescript",
-  "javascript",
-  "dart",
-  "java",
-  "react",
+  // Core Web Technologies
   "html5",
   "css3",
-  "prisma",
-  "amazonaws",
+  "sass", // SCSS
+  "jquery",
+  
+  // Programming Languages
+  "javascript",
+  "typescript",
+  "dart",
+  "java",
+  
+  // CSS Frameworks & UI Libraries
+  "tailwindcss",
+  "bootstrap",
+  "materialui",
+  "antdesign",
+  
+  // Frontend Frameworks
+  "react",
+  "nextjs",
+  "redux",
+  "svelte",
+  
+  // Backend Technologies
+  "nodejs",
+  "express",
+  
+  // Databases
+  "mongodb",
+  "mysql",
   "postgresql",
+  "graphql",
+  
+  // E-commerce & CMS
+  "shopify",
+  
+  // Cloud & Infrastructure
+  "amazonaws",
   "firebase",
-  "nginx",
   "vercel",
+  "nginx",
+  "docker",
+  "prisma",
+  
+  // Testing
   "testinglibrary",
   "jest",
   "cypress",
-  "docker",
+  
+  // Development Tools
   "git",
-  "jira",
   "github",
   "gitlab",
   "visualstudiocode",
   "figma",
+  "jira",
 ]

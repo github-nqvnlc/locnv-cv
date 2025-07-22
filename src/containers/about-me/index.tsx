@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity"
-import { Badge } from "@/components/ui/badge"
-import { GlowingEffect } from "@/components/ui/glowing-effect"
-import { MY_NETWORKS } from "@/data/my-networks"
-import { Code, Layers, UserRound, Zap } from "lucide-react"
-import { useTheme } from "next-themes"
-import { MyResume } from "../my-resume"
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { Badge } from "@/components/ui/badge";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { MY_NETWORKS } from "@/data/my-networks";
+import { Code, Layers, UserRound, Zap } from "lucide-react";
+import { useTheme } from "next-themes";
+import { MyResume } from "../my-resume";
 
 export function MyInformation() {
   return (
@@ -62,10 +62,10 @@ export function MyInformation() {
 
                     <div>
                       <p className="text-lg sm:text-xl relative z-20 mt-2 font-medium">
-                        Bach Duong Kinh
+                        Van Loc Nguyen
                       </p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
-                        Digital Fortress Co., Ltd.
+                        Windify Co., Ltd.
                       </p>
                       <p className="relative z-20 text-sm sm:text-base text-neutral-500 font-medium uppercase">
                         Frontend Developer
@@ -77,12 +77,11 @@ export function MyInformation() {
                 </div>
                 <div className="space-y-6 flex-1 flex flex-col items-center justify-center">
                   <h3 className="pt-0.5 text-lg font-bold text-balance text-black md:text-4xl dark:text-white">
-                    Passionate about technology and frontend craftsmanship.
+                    Frontend isn&#39;t just code — it&#39;s my craft, my calling, and my
+                    contribution to the future of technology.
                   </h3>
                   <h2 className="text-sm/[1.125rem] text-black md:text-base/[1.375rem] dark:text-neutral-400 [&_b]:md:font-semibold [&_strong]:md:font-semibold">
-                    I thrive on learning, leading, and solving complex
-                    challenges — always reflecting on how each experience
-                    contributes to personal and team growth.
+                  Every challenge is a chance to lead, to grow, and to build something better — not just for me, but for the team and the people we create for.
                   </h2>
                 </div>
 
@@ -102,10 +101,10 @@ export function MyInformation() {
         numRows={1}
         className="!text-xl md:!text-3xl opacity-50 my-6"
       >
-        ⭐ Personal Portfolio
+        ⭐ Van Loc Nguyen ⭐ Louis JirasR ⭐ Personal Portfolio ⭐ Frontend Developer
       </VelocityScroll>
     </>
-  )
+  );
 }
 
 const SocialNetwork = () => {
@@ -125,13 +124,13 @@ const SocialNetwork = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const KeyAchievements = () => {
-  const { theme, systemTheme } = useTheme()
+  const { theme, systemTheme } = useTheme();
 
-  const currentTheme = theme === "system" ? systemTheme : theme
+  const currentTheme = theme === "system" ? systemTheme : theme;
   return (
     <div
       className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6"
@@ -224,13 +223,13 @@ const KeyAchievements = () => {
         </p>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
 const KeySkills = () => {
-  const { theme, systemTheme } = useTheme()
+  const { theme, systemTheme } = useTheme();
 
-  const currentTheme = theme === "system" ? systemTheme : theme
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -240,7 +239,7 @@ const KeySkills = () => {
         delayChildren: 0.2,
       },
     },
-  }
+  };
 
   // Animation variants for individual skill badges
   const badgeVariants = {
@@ -250,51 +249,143 @@ const KeySkills = () => {
       y: 0,
       transition: { type: "spring", stiffness: 300, damping: 20 },
     },
-  }
+  };
 
   // Array of skills with their colors for hover effects
   const skills = [
+    // Core Web Technologies
     {
-      name: "React",
-      color: "rgb(219 234 254)",
-      darkColor: "rgba(59, 130, 246, 0.2)",
+      name: "HTML",
+      color: "rgb(254 237 230)", // HTML Orange #E34F26
+      darkColor: "rgba(227, 79, 38, 0.2)",
     },
     {
-      name: "Next.js",
-      color: "rgb(224 231 255)",
-      darkColor: "rgba(99, 102, 241, 0.2)",
+      name: "CSS",
+      color: "rgb(230 242 253)", // CSS Blue #1572B6
+      darkColor: "rgba(21, 114, 182, 0.2)",
+    },
+    {
+      name: "SCSS",
+      color: "rgb(252 237 248)", // SCSS Pink #CF649A
+      darkColor: "rgba(207, 100, 154, 0.2)",
+    },
+    {
+      name: "jQuery",
+      color: "rgb(230 241 253)", // jQuery Blue #0769AD
+      darkColor: "rgba(7, 105, 173, 0.2)",
+    },
+    // Programming Languages
+    {
+      name: "JavaScript",
+      color: "rgb(255 251 235)", // JavaScript Yellow #F7DF1E
+      darkColor: "rgba(247, 223, 30, 0.2)",
     },
     {
       name: "TypeScript",
-      color: "rgb(219 234 254)",
-      darkColor: "rgba(59, 130, 246, 0.2)",
+      color: "rgb(235 244 255)", // TypeScript Blue #3178C6
+      darkColor: "rgba(49, 120, 198, 0.2)",
     },
+    // CSS Frameworks
     {
       name: "Tailwind CSS",
-      color: "rgb(207 250 254)",
+      color: "rgb(235 251 255)", // Tailwind Cyan #06B6D4
       darkColor: "rgba(6, 182, 212, 0.2)",
+    },
+    // {
+    //   name: "Bootstrap",
+    //   color: "rgb(244 240 254)", // Bootstrap Purple #7952B3
+    //   darkColor: "rgba(121, 82, 179, 0.2)",
+    // },
+    {
+      name: "Material UI",
+      color: "rgb(235 248 255)", // Material UI Blue #007FFF
+      darkColor: "rgba(0, 127, 255, 0.2)",
+    },
+    {
+      name: "Ant Design",
+      color: "rgb(236 248 255)", // Ant Design Blue #1890FF
+      darkColor: "rgba(24, 144, 255, 0.2)",
+    },
+    {
+      name: "Shadcn",
+      color: "rgb(248 250 252)", // Shadcn Neutral
+      darkColor: "rgba(71, 85, 105, 0.2)",
+    },
+    // Frontend Frameworks
+    {
+      name: "ReactJS",
+      color: "rgb(235 251 255)", // React Cyan #61DAFB
+      darkColor: "rgba(97, 218, 251, 0.2)",
+    },
+    {
+      name: "Next.js",
+      color: "rgb(248 250 252)", // Next.js Black/White
+      darkColor: "rgba(15, 23, 42, 0.2)",
+    },
+    {
+      name: "React Native",
+      color: "rgb(235 251 255)", // React Native Cyan #61DAFB
+      darkColor: "rgba(97, 218, 251, 0.2)",
     },
     {
       name: "Redux",
-      color: "rgb(237 233 254)",
-      darkColor: "rgba(124, 58, 237, 0.2)",
+      color: "rgb(244 240 255)", // Redux Purple #764ABC
+      darkColor: "rgba(118, 74, 188, 0.2)",
     },
     {
-      name: "UI/UX",
-      color: "rgb(254 226 226)",
-      darkColor: "rgba(239, 68, 68, 0.2)",
+      name: "Svelte Kit",
+      color: "rgb(255 235 235)", // Svelte Orange/Red #FF3E00
+      darkColor: "rgba(255, 62, 0, 0.2)",
     },
     {
-      name: "Responsive Design",
-      color: "rgb(220 252 231)",
-      darkColor: "rgba(16, 185, 129, 0.2)",
+      name: "React Remix",
+      color: "rgb(237 246 255)", // Remix Blue #3992FF
+      darkColor: "rgba(57, 146, 255, 0.2)",
+    },
+    // Backend Technologies
+    {
+      name: "Node.js",
+      color: "rgb(236 252 239)", // Node.js Green #339933
+      darkColor: "rgba(51, 153, 51, 0.2)",
     },
     {
-      name: "Performance Optimization",
-      color: "rgb(254 243 199)",
-      darkColor: "rgba(245, 158, 11, 0.2)",
+      name: "Express",
+      color: "rgb(248 250 252)", // Express Neutral
+      darkColor: "rgba(64, 64, 64, 0.2)",
     },
-  ]
+    {
+      name: "RESTful APIs",
+      color: "rgb(240 253 244)", // API Green
+      darkColor: "rgba(34, 197, 94, 0.2)",
+    },
+    // Databases & Query Languages
+    {
+      name: "MongoDB",
+      color: "rgb(236 253 240)", // MongoDB Green #47A248
+      darkColor: "rgba(71, 162, 72, 0.2)",
+    },
+    {
+      name: "MySQL",
+      color: "rgb(235 244 254)", // MySQL Blue #4479A1
+      darkColor: "rgba(68, 121, 161, 0.2)",
+    },
+    {
+      name: "GraphQL",
+      color: "rgb(253 236 250)", // GraphQL Pink #E10098
+      darkColor: "rgba(225, 0, 152, 0.2)",
+    },
+    // E-commerce & Templating
+    {
+      name: "Liquid",
+      color: "rgb(235 248 255)", // Liquid Blue (Shopify related)
+      darkColor: "rgba(59, 130, 246, 0.2)",
+    },
+    {
+      name: "Shopify",
+      color: "rgb(244 252 247)", // Shopify Green #95BF47
+      darkColor: "rgba(149, 191, 71, 0.2)",
+    },
+  ];
   return (
     <motion.div
       className="flex flex-wrap gap-2"
@@ -326,5 +417,5 @@ const KeySkills = () => {
         </motion.div>
       ))}
     </motion.div>
-  )
-}
+  );
+};

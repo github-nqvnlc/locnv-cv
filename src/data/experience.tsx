@@ -1,39 +1,72 @@
-import { BlurImage } from "@/components/ui/apple-cards-carousel"
+import { BlurImage } from "@/components/ui/apple-cards-carousel";
 
 export const EXPERIENCE_TIMELINE = [
   {
-    title: "2022",
+    title: "10/2021",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-          Started as a fresher, quickly adapting to the environment. <br />{" "}
-          Focused on building frontend features for IoT and environmental
-          monitoring projects, driving operational efficiency for clients.
+          <strong className="text-orange-600 text-4xl">
+            ST United Company - Da Nang
+          </strong>{" "}
+          <br />
+          <span className="text-orange-200 text-2xl mb-1 block">
+            Fresher Frontend Developer
+          </span>{" "}
+          <br />
+          - Participated in an internship program at ST United.
+          <br />
+          - Played an active role in developing project interfaces using
+          ReactJS.
+          <br />
+          - Gained invaluable insights into the collaborative nature of project
+          development during the two-month internship.
+          <br />
+          - Worked closely with a talented team to sharpen skills and contribute
+          meaningfully.
+          <br />
+          - Offered a full-time position upon completing the internship,
+          allowing for further professional growth within the organization.
+          <br />
         </p>
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_1.tiff"
+            src="/images/STUnited/pic1.JPG"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_2.tiff"
+            src="/images/STUnited/pic2.JPG"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_3.tiff"
+            src="/images/STUnited/pic3.JPG"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_4.webp"
+            src="/images/STUnited/pic4.JPG"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/STUnited/pic5.JPG"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/STUnited/pic6.JPG"
             alt="startup template"
             width={500}
             height={500}
@@ -44,38 +77,45 @@ export const EXPERIENCE_TIMELINE = [
     ),
   },
   {
-    title: "Early 2023",
+    title: "12/2022 - 04/2023",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-          Earned trust and became a key team member. <br /> Contributed to the
-          development and implementation of micro-frontend projects, creating a
-          scalable and flexible platform for client needs.
+          <strong className="text-blue-600 text-4xl">
+            Sacombank - Ho Chi Minh
+          </strong>{" "}
+          <br />
+          <span className="text-blue-200 text-2xl mb-1 block">
+            Frontend Developer
+          </span>{" "}
+          <br />
+          - Responsible for designing and implementing user interfaces for
+          static pages at Sacombank.
+          <br />
+          - Ensures that the interfaces are both visually appealing and
+          functional.
+          <br />
+          - Creates dynamic advertisement and marketing websites aligned with
+          the company’s branding and promotional goals.
+          <br />
+          - Refines technical skills, particularly in HTML, CSS, and JavaScript.
+          <br />
+          - Deepens understanding of web design principles.
+          <br />
+          - Learns to balance aesthetic design with practical functionality for
+          an optimal user experience across various digital platforms.
+          <br />
         </p>
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_1.JPG"
+            src="/images/sacombank/pic1.jpg"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_2.JPG"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-          <BlurImage
-            src="/images/ilotusland/ilotusland_section2_3.PNG"
-            alt="startup template"
-            width={500}
-            height={500}
-            className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-          />
-          <BlurImage
-            src="/images/ilotusland/ilotusland_section2_4.JPG"
+            src="/images/sacombank/pic2.png"
             alt="startup template"
             width={500}
             height={500}
@@ -86,18 +126,56 @@ export const EXPERIENCE_TIMELINE = [
     ),
   },
   {
-    title: "2023",
+    title: "05/2023 - 09/2023",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
-          Led frontend optimizations, enhancing user experience and reducing
-          development time. <br /> Solved challenges related to legacy
-          technologies, improving product performance and scalability.
+          <strong className="text-green-600 text-4xl">
+            Green Global Company - Da Nang
+          </strong>{" "}
+          <br />
+          <span className="text-green-200 text-2xl mb-1 block">
+            Frontend Developer
+          </span>{" "}
+          <br />
+          - Responsible for designing interfaces and features for Da Nang Port
+          operations.
+          <br />
+          - Implement various functionalities to support the logistics sector.
+          <br />
+          - Ensure that systems are efficient and user-friendly.
+          <br />
+          - Enhance skills in jQuery through hands-on experience.
+          <br />
+          - Apply jQuery to create dynamic and responsive features for the
+          platform.
+          <br />
         </p>
 
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_section_3.webp"
+            src="/images/GreenGlobal/pic3.png"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/GreenGlobal/pic2.webp"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/GreenGlobal/pic1.webp"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/GreenGlobal/pic4.webp"
             alt="hero template"
             width={500}
             height={1000}
@@ -108,20 +186,54 @@ export const EXPERIENCE_TIMELINE = [
     ),
   },
   {
-    title: "2024",
+    title: "09/2023 - 03/2025",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-4">
-          Embarked on a new chapter with cutting-edge IoT projects with
-          <strong> Digital Fortress</strong>.
-          <br /> Step by step, I proved myself and earned the trust to become a
-          key member of the team, contributing to feature development and
-          product stability.
+          <strong className="text-yellow-500 text-4xl">
+            SapotaCorp - Da Nang
+          </strong>{" "}
+          <br />
+          <span className="text-yellow-200 text-2xl mb-1 block">
+            Fullstack Developer
+          </span>{" "}
+          <br />
+          - Worked at an outsourcing company with exposure to a variety of
+          project models.
+          <br />
+          - Gained experience across diverse industries and solutions.
+          <br />
+          - Involved in e-commerce projects, researching platforms like Shopify
+          and other e-commerce development frameworks.
+          <br />
+          - Enhanced full-stack development skills, focusing on NodeJS and
+          ReactJS. <br />
+          - Improved project management skills, including team leadership and
+          task delegation.
+          <br />
+          - Developed problem-solving and risk management abilities.
+          <br />
         </p>
 
         <div className="grid grid-cols-1 gap-4">
           <BlurImage
-            src="/images/digitalfortress/section_1.png"
+            src="/images/sapotacorp/pic0.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <BlurImage
+            src="/images/sapotacorp/pic1.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/sapotacorp/pic2.jpg"
             alt="hero template"
             width={500}
             height={1000}
@@ -131,63 +243,152 @@ export const EXPERIENCE_TIMELINE = [
       </div>
     ),
   },
-
   {
-    title: "Highlights 2024",
+    title: "03/2025 - Present",
+    content: (
+      <div>
+        <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-4">
+          <strong className="text-orange-500 text-4xl">
+            Windify - Da Nang
+          </strong>{" "}
+          <br />
+          <span className="text-blue-200 text-2xl mb-1 block">
+            Fullstack Developer
+          </span>{" "}
+          <br />
+          - Developing a comprehensive platform product designed for e-commerce
+          businesses.
+          <br />
+          - Building scalable and modern web applications using Svelte Kit
+          framework.
+          <br />
+          - Expanding backend development expertise through hands-on experience
+          with server-side technologies.
+          <br />
+          - Actively learning Rust programming language to enhance system
+          programming knowledge.
+          <br />
+          - Continuously upgrading technical skills and staying current with
+          emerging technologies.
+          <br />
+          - Contributing to the development of innovative solutions for online
+          commerce platforms.
+          <br />
+        </p>
+
+        <div className="grid grid-cols-1 gap-4">
+          <BlurImage
+            src="/images/windify/pic1.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <BlurImage
+            src="/images/windify/pic2.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <BlurImage
+            src="/images/windify/pic3.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+          <div className="grid grid-cols-1 gap-4">
+            <BlurImage
+              src="/images/windify/pic4.jpg"
+              alt="hero template"
+              width={500}
+              height={1000}
+              className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <BlurImage
+              src="/images/windify/pic5.jpg"
+              alt="hero template"
+              width={500}
+              height={1000}
+              className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+          <BlurImage
+            src="/images/windify/pic6.jpg"
+            alt="hero template"
+            width={500}
+            height={1000}
+            className="rounded-lg object-cover w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Highlights Career",
     content: (
       <div>
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-8">
           Throughout the year, I’ve embraced challenges and delivered meaningful
-          results across key IoT projects. Here are some of the milestones I’m
-          most proud of:
+          results across key projects. Here are some of the milestones I’m most
+          proud of:
         </p>
 
         <div className="mb-8">
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ Delivered multiple IoT-focused web apps from development to
-            production
+            ✅ A passionate Frontend & Fullstack Developer with over 2 years of
+            hands-on experience in both in-house development and outsourcing
+            environments.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ Introduced new tech stacks to improve performance and developer
-            experience
+            ✅ Began the journey as an intern at ST United, where a strong
+            foundation in ReactJS and a proactive mindset quickly led to a
+            full-time offer.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ Built reusable UI components and internal tools to streamline
-            team workflows
+            ✅ At Sacombank, crafted intuitive static web interfaces and
+            responsive marketing pages, aligning with business goals and
+            branding strategies.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ Enhanced dashboard UX/UI for real-time environmental data
-            visualization
+            ✅ Enhanced real-world development skills at Green Global, building
+            interactive systems for Da Nang Port, balancing performance with
+            practical design using jQuery.
           </div>
           <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ Mentored junior members and helped shape coding standards across
-            the team
+            ✅ Currently thriving at SapotaCorp, contributing to various
+            projects across industries. Building scalable e-commerce platforms
+            using ReactJS, NodeJS, and Shopify, while honing leadership,
+            collaboration, and problem-solving skills.
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/digitalfortress/section_2_1.jpeg"
+            src="/images/highlight/pic1.jpg"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_2.jpeg"
+            src="/images/highlight/pic2.jpg"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_3.jpeg"
+            src="/images/highlight/pic3.jpg"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_4.jpeg"
+            src="/images/highlight/pic4.jpg"
             alt="startup template"
             width={500}
             height={500}
@@ -197,4 +398,4 @@ export const EXPERIENCE_TIMELINE = [
       </div>
     ),
   },
-]
+];

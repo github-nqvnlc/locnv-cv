@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client"
+"use client";
 import React, {
   useEffect,
   useRef,
@@ -7,87 +7,87 @@ import React, {
   createContext,
   useContext,
   JSX,
-} from "react"
+} from "react";
 import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconX,
-} from "@tabler/icons-react"
-import { cn } from "@/lib/utils"
-import { AnimatePresence, motion } from "motion/react"
-import Image, { ImageProps } from "next/image"
-import { useOutsideClick } from "@/hooks/use-outside-click"
+} from "@tabler/icons-react";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "motion/react";
+import Image, { ImageProps } from "next/image";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
-  items: JSX.Element[]
-  initialScroll?: number
+  items: JSX.Element[];
+  initialScroll?: number;
 }
 
 type Card = {
-  src: string
-  title: string
-  category: string
-  content?: React.ReactNode
-  techStack?: string[]
-}
+  src: string;
+  title: string;
+  category: string;
+  content?: React.ReactNode;
+  techStack?: string[];
+};
 
 export const CarouselContext = createContext<{
-  onCardClose: (index: number) => void
-  currentIndex: number
+  onCardClose: (index: number) => void;
+  currentIndex: number;
 }>({
   onCardClose: () => {},
   currentIndex: 0,
-})
+});
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
-  const carouselRef = React.useRef<HTMLDivElement>(null)
-  const [canScrollLeft, setCanScrollLeft] = React.useState(false)
-  const [canScrollRight, setCanScrollRight] = React.useState(true)
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const carouselRef = React.useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
+  const [canScrollRight, setCanScrollRight] = React.useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     if (carouselRef.current) {
-      carouselRef.current.scrollLeft = initialScroll
-      checkScrollability()
+      carouselRef.current.scrollLeft = initialScroll;
+      checkScrollability();
     }
-  }, [initialScroll])
+  }, [initialScroll]);
 
   const checkScrollability = () => {
     if (carouselRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current
-      setCanScrollLeft(scrollLeft > 0)
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth)
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
     }
-  }
+  };
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" })
+      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
     }
-  }
+  };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" })
+      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
     }
-  }
+  };
 
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
-      const cardWidth = isMobile() ? 230 : 384 // (md:w-96)
-      const gap = isMobile() ? 4 : 8
-      const scrollPosition = (cardWidth + gap) * (index + 1)
+      const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
+      const gap = isMobile() ? 4 : 8;
+      const scrollPosition = (cardWidth + gap) * (index + 1);
       carouselRef.current.scrollTo({
         left: scrollPosition,
         behavior: "smooth",
-      })
-      setCurrentIndex(index)
+      });
+      setCurrentIndex(index);
     }
-  }
+  };
 
   const isMobile = () => {
-    return window && window.innerWidth < 768
-  }
+    return window && window.innerWidth < 768;
+  };
 
   return (
     <CarouselContext.Provider
@@ -153,51 +153,59 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         </div>
       </div>
     </CarouselContext.Provider>
-  )
-}
+  );
+};
 
 export const Card = ({
   card,
   index,
   layout = false,
   techStack,
+  repo,
+  website,
+  appStore,
+  playStore,
 }: {
-  card: Card
-  index: number
-  layout?: boolean
-  techStack?: string[]
+  card: Card;
+  index: number;
+  layout?: boolean;
+  techStack?: string[];
+  repo?: string;
+  website?: string;
+  appStore?: string;
+  playStore?: string;
 }) => {
-  const [open, setOpen] = useState(false)
-  const containerRef = useRef<HTMLDivElement>(null)
-  const { onCardClose } = useContext(CarouselContext)
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { onCardClose } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        handleClose()
+        handleClose();
       }
     }
 
     if (open) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"
+      document.body.style.overflow = "auto";
     }
 
-    window.addEventListener("keydown", onKeyDown)
-    return () => window.removeEventListener("keydown", onKeyDown)
-  }, [open])
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [open]);
 
-  useOutsideClick(containerRef as any, () => handleClose())
+  useOutsideClick(containerRef as any, () => handleClose());
 
   const handleOpen = () => {
     // setOpen(true)
-  }
+  };
 
   const handleClose = () => {
-    setOpen(false)
-    onCardClose(index)
-  }
+    setOpen(false);
+    onCardClose(index);
+  };
 
   return (
     <>
@@ -280,6 +288,67 @@ export const Card = ({
                   {tech}
                 </motion.div>
               ))}
+
+              {repo && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-white md:text-sm font-semibold  text-left px-3 py-1 rounded-2xl bg-orange-500/50 backdrop-blur-sm border text-[10px] shadow"
+                >
+                  <a
+                    href={repo}
+                    target="_blank"
+                    rel="noopener noreferrer cursor-pointer hover:underline hover:text-blue-500"
+                  >
+                    View Code
+                  </a>
+                </motion.div>
+              )}
+              {website && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-white md:text-sm font-semibold  text-left px-3 py-1 rounded-2xl bg-blue-500/50 backdrop-blur-sm border text-[10px] shadow"
+                >
+                  <a
+                    href={website}
+                    target="_blank"
+                    rel="noopener noreferrer cursor-pointer hover:underline hover:text-blue-500"
+                  >
+                    View Website
+                  </a>
+                </motion.div>
+              )}
+              {appStore && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-white md:text-sm font-semibold  text-left px-3 py-1 rounded-2xl bg-blue-900/50 backdrop-blur-sm border text-[10px] shadow"
+                >
+                  <a
+                    href={appStore}
+                    target="_blank"
+                    rel="noopener noreferrer cursor-pointer hover:underline hover:text-blue-500"
+                  >
+                    View App Store
+                  </a>
+                </motion.div>
+              )}
+              {playStore && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-white md:text-sm font-semibold  text-left px-3 py-1 rounded-2xl bg-green-500/50 backdrop-blur-sm border text-[10px] shadow"
+                >
+                  <a
+                    href={playStore}
+                    target="_blank"
+                    rel="noopener noreferrer cursor-pointer hover:underline hover:text-blue-500"
+                  >
+                    View Play Store
+                  </a>
+                </motion.div>
+              )}
             </div>
           </AnimatePresence>
         )}
@@ -292,8 +361,8 @@ export const Card = ({
         />
       </motion.button>
     </>
-  )
-}
+  );
+};
 
 export const BlurImage = ({
   height,
@@ -303,7 +372,7 @@ export const BlurImage = ({
   alt,
   ...rest
 }: ImageProps) => {
-  const [isLoading, setLoading] = useState(true)
+  const [isLoading, setLoading] = useState(true);
   return (
     <Image
       className={cn(
@@ -321,5 +390,5 @@ export const BlurImage = ({
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />
-  )
-}
+  );
+};

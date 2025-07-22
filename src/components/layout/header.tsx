@@ -10,8 +10,8 @@ import {
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCallback, useEffect, useRef, useState } from "react"
+import { useTheme } from "next-themes"
 import { ModeToggle } from "../mode-toggle"
-import { Logo } from "../svg/logo"
 import { Button } from "../ui/button"
 import {
   Drawer,
@@ -22,6 +22,7 @@ import {
   DrawerTrigger,
 } from "../ui/drawer"
 import { Separator } from "@radix-ui/react-dropdown-menu"
+import Image from "next/image"
 
 const links = [
   {
@@ -53,10 +54,14 @@ export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const lastScrollY = useRef(0)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const { theme, systemTheme } = useTheme()
 
   const pathname = usePathname()
 
   const isDisableHeaderScroll = pathNameDisableHeaderScroll.includes(pathname)
+  
+  // Determine current theme
+  const currentTheme = theme === "system" ? systemTheme : theme
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY
@@ -102,7 +107,13 @@ export const Header = () => {
           )}
         >
           <div className="flex items-center gap-2">
-            <Logo className="size-14" />
+            {/* <Logo className="size-14" /> */}
+            <Image 
+              src={currentTheme === "light" ? "/images/logo-locnv-light.png" : "/images/logo-locnv.png"} 
+              alt="logo" 
+              width={50} 
+              height={50} 
+            />
           </div>
           <div className="flex-1 items-center gap-3 justify-center hidden sm:flex">
             {links.map((link) => (
@@ -116,14 +127,14 @@ export const Header = () => {
           <div className="flex items-center gap-2">
             <iframe
               className="hidden sm:block"
-              src="https://github.com/sponsors/kinhdev24/button"
-              title="Sponsor kinhdev24"
+              src="https://github.com/sponsors/github-nqvnlc/button"
+              title="Sponsor locnv14"
               height="32"
               width="114"
               style={{ border: "0", borderRadius: "6px" }}
             ></iframe>
             <a
-              href={"https://github.com/kinhdev24/kinhdev24-portfolio"}
+              href={"https://github.com/github-nqvnlc"}
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 rounded-2xl hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300"
@@ -146,8 +157,13 @@ export const Header = () => {
               <DrawerContent className="min-h-dvh">
                 <DrawerHeader className="flex justify-between">
                   <DrawerTitle className="flex items-center gap-2">
-                    <Logo className="size-14" />
-                    kinhdev.id.vn
+                    <Image 
+                      src={currentTheme === "dark" ? "/images/logo-locnv.png" : "/images/logo-locnv-light.png"} 
+                      alt="logo" 
+                      width={56} 
+                      height={56} 
+                    />
+                    locnv.vercel.app
                   </DrawerTitle>
                   <DrawerClose
                     asChild

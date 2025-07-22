@@ -49,13 +49,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
-          My Journey as a Frontend Developer
+          My Journey as a Front-End Developer
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-3xl italic">
-          I started my journey at iLotusLand and spent 2 years building IoT
-          platforms. For the past 2 years, I&#39;ve been growing at
-          DigitalFortress — and the journey continues. <br /> Here&apos;s a
-          timeline of my journey.
+        My professional journey began with a passion for building intuitive and scalable web interfaces. Over the years, I’ve grown from a frontend intern to a full-fledged fullstack developer, continuously learning and contributing across different industries and teams.
         </p>
       </div>
 
