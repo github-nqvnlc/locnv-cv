@@ -3,9 +3,9 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sponsors | Kinh Dev",
-  description: "Sponsors of Kinh Dev",
-}
+  title: "Sponsors | Locnv Dev",
+  description: "Sponsors of Locnv Dev",
+};
 
 export default function Page() {
   return (
@@ -23,5 +23,5 @@ export default function Page() {
         ></iframe>
       </HoverBorderGradient>
     </FullScreen>
-  )
+  );
 }

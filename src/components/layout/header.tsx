@@ -198,8 +198,8 @@ export const Header = () => {
                   ))}
                   <Separator />
                   <iframe
-                    src="https://github.com/sponsors/kinhdev24/button"
-                    title="Sponsor kinhdev24"
+                    src="https://github.com/sponsors/github-nqvnlc/button"
+                    title="Sponsor locnv"
                     height="32"
                     width="114"
                     style={{ border: "0", borderRadius: "6px" }}

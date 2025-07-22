@@ -2,13 +2,13 @@
 
 A modern, responsive developer portfolio showcasing skills, projects, and professional experience. Built with cutting-edge web technologies and optimized for performance.
 
-![Portfolio Preview](https://media.daily.dev/image/upload/s--aWLslYU3--/f_auto/v1744482505/ugc/content_50c23b68-02a5-43d8-bb3e-e0b3b2f269d0)
+![Portfolio Preview](https://lxbsypbe5na5ujep.public.blob.vercel-storage.com/me/screenshot_1753153309.png)
 
-[![Sponsor kinhdev24](https://img.shields.io/badge/Sponsor-kinhdev24-ff69b4)](https://github.com/sponsors/kinhdev24)
+[![Sponsor locnv14](https://img.shields.io/badge/Sponsor-locnv14-ff69b4)](https://github.com/sponsors/github-nqvnlc)
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://kinhdev.id.vn)
+[View Live Portfolio](https://locnv.vercel.app)
 
 ## ✨ Features
 
@@ -47,8 +47,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/kinhdev24/kinhdev24-portfolio.git
-cd kinhdev24-portfolio
+git clone https://github.com/github-nqvnlc/locnv-cv.git
+cd locnv-cv
 ```
 
 ### 2. Install Dependencies
@@ -156,7 +156,7 @@ Edit the following files to customize with your information:
 
 1. **My Social Networks**: `src/data/my-networks.ts`
 2. **Role Titles**: `src/data/role-titles.ts`
-3. **Resume File**: `public/file/kinhbach_resume.ts`
+3. **Resume File**: `public/file/vanloc_resume.pdf`
 4. **Experience**: `src/data/experience.tsx`
 5. **Projects**: `src/data/projects.ts`
 6. **Tech Stacks**: `src/data/tech-stack.ts`
@@ -185,7 +185,7 @@ src/
 ## 📁 Project Structure
 
 ```
-kinhdev24-portfolio/
+locnv-cv/
 ├── public/             # Static assets
 │   ├── images/         # Images and media
 │   ├── icons/          # Favicon and icons
@@ -270,12 +270,12 @@ If you find a bug, please create an issue with:
 
 ## 👨‍💻 Author
 
-**[Bach Duong Kinh]**
+**[NGUYEN VAN LOC]**
 
-- GitHub: [@kinhdev24](https://github.com/kinhdev24)
-- LinkedIn: [@kinhdev24](https://www.linkedin.com/in/kinhdev24)
-- Email: [kinhdev24@gmail.com](mailto:kinhdev24@gmail.com)
-- Website: [kinhdev.id.vn](https://kinhdev.id.vn)
+- GitHub: [@locnv14](https://github.com/github-nqvnlc)
+- LinkedIn: [@locnv14](https://www.linkedin.com/in/locnv14)
+- Email: [locnv14@gmail.com](mailto:locnv14@gmail.com)
+- Website: [locnv.vercel.app](https://locnv.vercel.app)
 
 ## 🙏 Acknowledgments
 
@@ -345,4 +345,4 @@ pnpm install
 
 ⭐ If you found this project useful, please consider giving it a star on GitHub!
 
-Made with ❤️ by kinhdev24
+Made with ❤️ by locnv14
